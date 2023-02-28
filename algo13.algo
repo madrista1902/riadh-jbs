@@ -1,0 +1,14 @@
+FUNCTION verif_pol(str : STRING ) : BOOLEAN
+VAR 
+  i:INTEGER: i:=1
+
+BEGIN
+  IF (leanght.str<=i) THEN
+  verif_pol:= true;
+  IF ELSE (str[i] !=str[lenght.str]) THEN
+    verif_pol:=false;
+  ELSE
+  i:=i+1
+  verif_pol:= verif_pol(str[lenght.str-1])
+  END_IF
+END
